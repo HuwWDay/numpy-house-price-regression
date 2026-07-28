@@ -45,8 +45,11 @@ def clip_columns(X, lower, upper):
     # TODO: Clip every entry of a feature matrix to per-column lower/upper bounds.
     return np.clip(X, lower, upper)
 
-# Step 4 - make_ratio_feature (not yet solved)
-# TODO: implement
+# Step 4 - make_ratio_feature
+def make_ratio_feature(numerator, denominator, eps=1e-8):
+    # TODO: Form a derived ratio feature from two 1-D arrays with safe division.
+    denominator += eps 
+    return numerator/denominator
 
 # Step 5 - append_column (not yet solved)
 # TODO: implement
